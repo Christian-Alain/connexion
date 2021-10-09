@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="formulaire">
+                <img src="icon/contact.png" alt="contact">
+                <h3>inscrivez-vous</h3>
+                <p>Creer un compte gratuit sur futur digital</p>
+                <form action="" id="connexion">
+                    <!-- <legend>Nom complet</legend> -->
+                    <div class="form-group">
+                        <input type="text" name="nom" id=
+                        "nom" placeholder="John Nash">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="mail" placeholder="Adresse email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" for="mdp" id="mdp" placeholder="Mot de passe">
+                        <label for="mdp"><img src="icon/visibility.png" alt="" id="oeil" onClick="changer()"></label><br/>
+                        <span class="consigne">le mot de passe doit etre compris entre 4 et 6 caracteres</span>
+                    </div>
+                   
+                    <div class="form-group">
+                        <input type="password" for="verifMdp" id="verifMdp" placeholder="Confirmer mot de passe">
+                        <label for="verifMdp"><img src="icon/visibility.png" alt="" id="oeilVerif" onClick="changerVerif()"></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="check"><span> J'ai accepter les <a href=""> conditions generale </a></span>
+                    </div>
+                    <button  type="button" onclick="verifier()">S'INSCRIRE</button>
+                    <!-- <input type="submit" value="S'INSCRIRE" onclick="verifier()"> -->
+                </form>
+                <div class="bottons">
+                    <div class="social">
+                        <img src="image/facebook.png" alt="">
+                    </div>
+                    <div class="social">
+                        <img src="image/linkedin.png" alt="">
+                    </div>
+                    <div class="social">
+                        <img src="image/google.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="image">
+                <!-- <img src="image/call.jpg" alt="femme souriante"> -->
+            </div>
+        </main>
+        <script src="affiche.js"></script>
+    </body>
+</html>

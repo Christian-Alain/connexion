@@ -1,0 +1,195 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+font-family: 'Raleway', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway:wght@100&display=swap');
+/* font-family: 'Open Sans Condensed', sans-serif; */
+
+
+html, body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+    box-shadow: 8px 10px 10px  #888888;
+    /* margin-top: 50px;
+    margin-left: 200px; */
+}
+/* left box */
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding: 15px;
+}
+img{
+    width: 35px;
+    height: 30px;
+    padding: 1ex;
+    
+}
+h3,p{
+    line-height: .01px;
+    padding-left: 10px;   
+}
+h3{
+   font-size: 20px;
+}
+p{ 
+    font-size: 12px;
+} 
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+/* legend{
+    position: relative;
+    width: 8vw;
+    margin-left: 3%;
+    color: #ff5160;
+    margin-bottom: -1%;
+    background-color: #fff;
+} */
+input[type="text"] ,input[type="email"], input[type="password"]{
+    margin-bottom: 10px;
+    width: 90%;
+    height: 30px;
+    
+}
+input:focus{
+    outline-color: tomato;
+}
+/* input[type="text"] ,input[type="email"], input[type="password"] :focus{
+    outline-color: tomato;
+} */
+button{
+    margin: 10px;
+    width: 90%;
+    height: 30px;
+    color: white;
+    background-color: tomato;
+    cursor: pointer;
+}
+.form-group span{
+    padding-left: .1vw;
+    font-size: 10px;
+   
+}
+a{
+    color: tomato;
+}
+/* span{
+    font-size: 100px;
+} */
+
+/* box image */
+.image{ /* l'espace que l'image doit prendre */
+    flex: 5;
+    background-image: url("image/call.jpg");
+    background-size: cover;
+}
+/* .image img{ 
+    width: 100%;
+    height: 100%;
+} */
+/* image oeil */
+label img{
+    width: 1em;
+    height: 1em;
+    padding: 0%;
+    float: right;
+}
+
+/* positionner les yeux */
+/* #mdp input[type="password"],#verifMdp input[type="password"]{
+
+} */
+
+.form-group{
+    position: relative;
+}
+.form-group img{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    padding: 10px 8px;
+    cursor: pointer;
+    color: rgb(212, 212, 212);
+}
+/******** Reseau sociaux ********/
+
+.bottons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottons .social{
+    display: flex;
+    justify-content: center;
+    border: 1px solid silver;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-right: 15px;
+    align-items: center;
+    cursor: pointer;
+
+}
+.bottons .social img{
+    width: 30px;
+}
+
+/*********  media query  *********/
+
+@media screen and (max-width: 450px){
+    main{
+        margin: 0px;
+        width: 100%;
+    } 
+    .formulaire{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulaire form{
+        width: 80%;
+    }
+    .image{
+       display: none;
+    }
+    .bottons .social img{
+        width: 15px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width:768){
+    main{
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .formulaire{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulaire form{
+        width: 80%;
+    }
+    .image{
+       width: 59%;
+    }
+}
+
